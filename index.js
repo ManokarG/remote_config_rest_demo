@@ -11,7 +11,7 @@ var SCOPE = 'https://www.googleapis.com/auth/firebase.remoteconfig';
 
 function getAccessToken() {
     return new Promise(function(resolve, reject) {
-      var key = require('./service-account.json');
+      var key = require('./private/service-account.json');
       var jwtClient = new google.auth.JWT(
         key.client_email,
         null,
